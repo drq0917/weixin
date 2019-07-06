@@ -1,0 +1,22 @@
+<!--pages/home/home.wxml-->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view>
+  <text class='wen'>热门菜系</text>
+  <view wx:for="{{types}}" wx:key="{{index}}" class='Dmenu'>
+    <navigator url="{{'/pages/detail/detail?goodId='+item.id+'&name='+item.title}}">
+      <view class='menu'>
+        <image src='{{item.albums[0]}}' class='g-img'></image>
+        <view class='title'>{{item.title}}</view>
+    
+    </view>
+    </navigator>
+  </view>
+</view>

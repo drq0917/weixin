@@ -1,0 +1,17 @@
+<!--pages/search/search.wxml-->
+<view class='search'>
+<view class="section">
+  <image src='/images/search.png'></image>
+  <input maxlength="10" bindblur="bindd" placeholder="请输入菜谱名称" auto-focus/>
+</view>
+
+  <view wx:for="{{list}}" wx:key="{{index}}" class='Dmenu'>
+  <navigator url="{{'/pages/detail/detail?goodId='+item.id+'&name='+item.title}}">
+        <view class='menu'>
+          <image src='{{item.albums[0]}}' class='g-img'></image>
+          <view class='title'>{{item.title}}</view>
+        </view>
+        </navigator>
+    </view>
+
+</view>

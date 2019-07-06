@@ -1,0 +1,55 @@
+/* pages/search/search.wxss */
+.section{
+  background:rgb(233, 231, 231);
+  width: 98%;
+  /* height: 40rpx; */
+  display: inline-block;
+  position: relative;
+  border-radius: 50rpx
+}
+.section input{
+  height: 70rpx;
+  text-align: left;
+  background: rgb(233, 231, 231);
+  margin-left: 80rpx;
+  border-radius:50rpx ;
+  padding-left: 10rpx;
+}
+.search{
+  width: 100%;
+  text-align: center;
+  display: block
+}
+.section image{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  left: 0;
+  top: 5rpx;
+  padding-left: 20rpx;
+}
+
+.g-img{
+  width: 100%;
+  height: 250rpx;
+}
+.menu{
+  width: 45%;
+  float: left;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 5%;
+  background: rgb(233, 231, 231);
+  /* background: #fff; */
+  overflow: hidden;
+}
+
+.title{
+  overflow:hidden; 
+  text-overflow:ellipsis; 
+  white-space:nowrap; 
+  padding: 10rpx 0 15rpx 10rpx;
+}
+.Dmenu{
+  margin-top: 10rpx;
+}

@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <view wx:for="{{xiang}}" wx:key="{{index}}">
+    <image src='{{item.albums[0]}}' class='xiang-img'></image>
+    <view class='xiang-name'> 调料</view>
+    <view class='xiang-cai'>{{item.burden}}</view>
+    <view class='xiang-name'>食材</view>
+    <view class='xiang-cai'>{{item.ingredients}} </view>
+    <view class='xiang-name-1'>做法</view>
+    <view wx:for="{{item.steps}}">
+     <view class='miao'>{{item.step}}</view>
+    <image src='{{item.img}}' class='bu-img'></image>
+     
+    </view>
+  </view>
+</view>
